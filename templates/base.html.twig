@@ -6,7 +6,10 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <h1>{{ knp_menu_render('navigator') }}</h1>
+        {% block body %}
+        {% endblock %}
+        
         {% block javascripts %}{% endblock %}
     </body>
 </html>

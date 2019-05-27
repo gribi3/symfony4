@@ -2,6 +2,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Number is {{ number }}</h1>
-    <h2>Name is {{ name }}<h2>
+    <h3>
+        <ol>
+            {% for gold in golds %}
+                <li>Cena złota = {{ gold.cena }} dla dnia {{ gold.data }}</li>
+            {% endfor %}
+        </ol>
+    </h3>
 {% endblock %}
